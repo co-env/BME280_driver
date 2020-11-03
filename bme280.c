@@ -401,8 +401,7 @@ static int8_t reload_device_settings(const struct bme280_settings *settings, str
  *  @brief This API is the entry point.
  *  It reads the chip-id and calibration data from the sensor.
  */
-int8_t bme280_init(struct bme280_dev *dev)
-{
+int8_t bme280_init(struct bme280_dev *dev) {
     int8_t rslt;
 
     /* chip id read try count */
